@@ -19,6 +19,12 @@ public class ProviderServiceImpl implements ProviderService {
      */
     @Override
     public String sayHello(String world) {
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         System.out.println("服务被调用：" + world);
         return world;
     }
