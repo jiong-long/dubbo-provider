@@ -7,12 +7,9 @@ import com.jianghu.api.ProviderService;
  * @description: dubbo实现类
  * @author: OF3848
  * @create: 2021-05-11 16:39
- *
- * version：默认为""，消费者调用也是""
- * stub：本地存根，提供者项目消费者那边执行的方法
  */
-@Service(version = "1.0.0", stub = "true")
-public class ProviderServiceImpl implements ProviderService {
+@Service(version = "2.0.0")
+public class ProviderServiceImpl2 implements ProviderService {
 
     /**
      * 定义一个dubbo方法
@@ -22,7 +19,7 @@ public class ProviderServiceImpl implements ProviderService {
      */
     @Override
     public String sayHello(String world) {
-        System.out.println("服务被调用：" + world);
+        System.out.println("服务被调用2：" + world);
         return world;
     }
 }
