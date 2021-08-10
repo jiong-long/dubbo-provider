@@ -11,11 +11,11 @@ import org.springframework.stereotype.Component;
  * @create: 2021-08-09 22:53
  */
 @Component
-public class ConfirmQueueListener {
+public class WarningQueueListener {
 
-    @RabbitListener(queues = ConfirmQueueConfig.CONFIRM_QUEUE_NAME)
-    public void receiveConfirmQueue(Message message){
+    @RabbitListener(queues = ConfirmQueueConfig.WARNING_QUEUE_NAME)
+    public void receiveWarningQueue(Message message){
         String msg = new String(message.getBody());
-        System.out.println("正常交换机：" + msg);
+        System.out.println("警告交换机：" + msg);
     }
 }
