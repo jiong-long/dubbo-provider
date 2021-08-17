@@ -1,8 +1,6 @@
 package com.jianghu.mq.rabbit;
 
-import com.jianghu.mq.rabbit.config.ConfirmQueueConfig;
 import org.springframework.amqp.core.Message;
-import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class WarningQueueListener {
 
-    @RabbitListener(queues = ConfirmQueueConfig.WARNING_QUEUE_NAME)
+    //@RabbitListener(queues = ConfirmQueueConfig.WARNING_QUEUE_NAME)
     public void receiveWarningQueue(Message message){
         String msg = new String(message.getBody());
         System.out.println("警告交换机：" + msg);
