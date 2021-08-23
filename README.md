@@ -6,3 +6,6 @@
 
 ####2、Dubbo
 放开 @EnableDubbo 注解
+
+####3、ActiveMQ
+放开 ActiveMqListener.java 中的 @JmsListener 注解
