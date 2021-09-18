@@ -1,7 +1,6 @@
 package com.jianghu.mq.rabbit;
 
 import org.springframework.amqp.core.Message;
-import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TtlListener {
 
-    @RabbitListener(queues = "QD")
+    //@RabbitListener(queues = "QD")
     public void receiveD(Message message){
         String msg = new String(message.getBody());
         System.out.println(msg);
