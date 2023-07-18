@@ -1,6 +1,6 @@
 package com.jianghu.spi;
 
-import com.alibaba.dubbo.common.extension.ExtensionLoader;
+import org.apache.dubbo.common.extension.ExtensionLoader;
 
 /**
  * @description: Dubbo SPI 测试

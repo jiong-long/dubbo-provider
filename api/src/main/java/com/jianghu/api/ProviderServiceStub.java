@@ -33,4 +33,9 @@ public class ProviderServiceStub implements ProviderService{
     public ZonedDateTime sayTime(ZonedDateTime time) {
         return null;
     }
+
+    @Override
+    public Person sayTime(Person person) {
+        return null;
+    }
 }

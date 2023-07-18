@@ -1,6 +1,7 @@
 package com.jianghu.provider;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.jianghu.api.Person;
 import com.jianghu.api.ProviderService;
 
 import java.time.ZonedDateTime;
@@ -31,5 +32,11 @@ public class ProviderServiceImpl implements ProviderService {
     @Override
     public ZonedDateTime sayTime(ZonedDateTime time) {
         return time;
+    }
+
+    @Override
+    public Person sayTime(Person person) {
+        person.setName("张三");
+        return person;
     }
 }

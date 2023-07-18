@@ -22,4 +22,11 @@ public interface ProviderService {
      * @return
      */
     ZonedDateTime sayTime(ZonedDateTime time);
+
+    /**
+     * 对象日期序列化
+     * @param person
+     * @return
+     */
+    Person sayTime(Person person);
 }
