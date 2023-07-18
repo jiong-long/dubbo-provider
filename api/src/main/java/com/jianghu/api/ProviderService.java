@@ -1,5 +1,7 @@
 package com.jianghu.api;
 
+import java.time.ZonedDateTime;
+
 /**
  * @description: 定义dubbo接口
  * @author: OF3848
@@ -13,4 +15,11 @@ public interface ProviderService {
      * @return
      */
     String sayHello(String world);
+
+    /**
+     * 日期序列化和反序列化
+     * @param time
+     * @return
+     */
+    ZonedDateTime sayTime(ZonedDateTime time);
 }

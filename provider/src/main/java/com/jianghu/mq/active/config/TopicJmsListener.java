@@ -2,7 +2,6 @@ package com.jianghu.mq.active.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 import org.springframework.jms.config.JmsListenerContainerFactory;
 
@@ -13,7 +12,7 @@ import javax.jms.ConnectionFactory;
  * @author: OF3848
  * @create: 2021-08-17 23:41
  */
-@Configuration
+//@Configuration
 public class TopicJmsListener {
 
     @Bean

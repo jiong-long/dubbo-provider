@@ -3,6 +3,8 @@ package com.jianghu.provider;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.jianghu.api.ProviderService;
 
+import java.time.ZonedDateTime;
+
 /**
  * @description: dubbo实现类
  * @author: OF3848
@@ -24,5 +26,10 @@ public class ProviderServiceImpl implements ProviderService {
     public String sayHello(String world) {
         System.out.println("服务被调用：" + world);
         return world;
+    }
+
+    @Override
+    public ZonedDateTime sayTime(ZonedDateTime time) {
+        return time;
     }
 }

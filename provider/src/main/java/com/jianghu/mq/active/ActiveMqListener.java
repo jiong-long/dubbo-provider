@@ -1,7 +1,6 @@
 package com.jianghu.mq.active;
 
 import org.springframework.jms.annotation.JmsListener;
-import org.springframework.stereotype.Component;
 
 import javax.jms.JMSException;
 import javax.jms.TextMessage;
@@ -11,7 +10,7 @@ import javax.jms.TextMessage;
  * @author: OF3848
  * @create: 2021-08-17 23:21
  */
-@Component
+//@Component
 public class ActiveMqListener {
 
     @JmsListener(destination = "queue-name")
